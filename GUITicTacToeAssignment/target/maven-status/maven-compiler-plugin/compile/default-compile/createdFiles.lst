@@ -1,0 +1,16 @@
+Controller\App$HandleStartGame.class
+Model\InvalidTileException.class
+Controller\App$HandleResetGame.class
+View\TileButton.class
+Controller\App.class
+Model\PlayerWonException.class
+Model\GameEndedException.class
+View\NewGameDialog.class
+Model\Game.class
+Model\BoardIsFullException.class
+Controller\App$HandleNewGame.class
+Model\Player.class
+View\Window.class
+Model\Tile.class
+Controller\App$HandleExitWindow.class
+Controller\App$HandleBoard.class
