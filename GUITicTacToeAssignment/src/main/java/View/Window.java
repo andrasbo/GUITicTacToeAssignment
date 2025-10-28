@@ -47,10 +47,13 @@ public class Window extends JFrame {
     private int rows;
     private int cols;
    
+    /**
+     *
+     */
     public Window() {      
                
         try {
-            setIconImage(ImageIO.read(new File("src/main/resources/tictactoe.png")));
+            setIconImage(ImageIO.read(new File("src/main/resources/tictactoe 16.png")));
         } 
         catch (IOException e) {
             System.err.println("icon not found");
@@ -113,6 +116,12 @@ public class Window extends JFrame {
          
         pack();
     }                       
+
+    /**
+     *
+     * @param rows
+     * @param cols
+     */
     public void newBoard(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
@@ -135,12 +144,21 @@ public class Window extends JFrame {
         }
         boardPanel.setVisible(true);
     } 
+
+    /**
+     *
+     */
     public void resetBoard() {
         for (Component tile : boardPanel.getComponents()) {
             ((TileButton)tile).setText("");
             ((TileButton)tile).setBackground(Color.WHITE);
         }        
     }
+
+    /**
+     *
+     * @param game
+     */
     public void drawBoard(Game game) {
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
@@ -164,25 +182,55 @@ public class Window extends JFrame {
             }
         }       
     }
+
+    /**
+     *
+     * @param player
+     */
     public void statusTurn(String player) {
         statusLabel.setText("Player " + player + ", take your turn!");
     }
+
+    /**
+     *
+     */
     public void statusDraw() {
         statusLabel.setText("DRAW!");
     }
+
+    /**
+     *
+     * @param player
+     */
     public void statusWin(String player) {
         statusLabel.setText(player + " has won!");
     }
     
+    /**
+     *
+     * @param listener
+     */
     public void addNewGameActionListener(ActionListener listener) {
         newGameButton.addActionListener(listener);}
                                               
+    /**
+     *
+     * @param listener
+     */
     public void addResetGameActionListener(ActionListener listener) {
         resetGameButton.addActionListener(listener);}
                                               
+    /**
+     *
+     * @param listener
+     */
     public void addExitWindowActionListener(ActionListener listener) {
         exitWindowButton.addActionListener(listener);}
     
+    /**
+     *
+     * @param listener
+     */
     public void addBoardActionListener(ActionListener listener) {
         for (Component tile : boardPanel.getComponents()) {
             ((TileButton)tile).addActionListener(listener);

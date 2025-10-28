@@ -1,6 +1,9 @@
 package View;
 
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -25,7 +28,15 @@ public class NewGameDialog extends JDialog implements ChangeListener {
     private final JLabel colLabel = new JLabel();
     private final JButton startGameButton = new JButton();   
     
-    public NewGameDialog() {        
+    /**
+     *
+     */
+    public NewGameDialog() {  
+        try {
+            setIconImage(ImageIO.read(new File("src/main/resources/tictactoe 16.png")));
+        } 
+        catch (IOException e) {System.err.println("icon not found");}         
+        
         initSelf();
         initComponents();
         setLocationRelativeTo(null);
@@ -33,7 +44,7 @@ public class NewGameDialog extends JDialog implements ChangeListener {
     
     private void initSelf() {
         setTitle("New Game");
-        setDefaultCloseOperation(HIDE_ON_CLOSE);
+        setDefaultCloseOperation(HIDE_ON_CLOSE);       
         setAlwaysOnTop(true);
         setLayout(new BoxLayout(getContentPane(), 1));
     }
@@ -81,17 +92,34 @@ public class NewGameDialog extends JDialog implements ChangeListener {
         pack();        
     }
     
+    /**
+     *
+     * @param listener
+     */
     public void addStartGameActionListener(ActionListener listener) {
         startGameButton.addActionListener(listener);
     }
+
+    /**
+     *
+     * @return
+     */
     public int getRowInput() {
         return rowSlider.getValue();
     }
+
+    /**
+     *
+     * @return
+     */
     public int getColInput() {
         return colSlider.getValue();
     }
 
-
+    /**
+     *
+     * @param e
+     */
     @Override
     public void stateChanged(ChangeEvent e) {
         rowLabel.setText(String.valueOf(rowSlider.getValue()));

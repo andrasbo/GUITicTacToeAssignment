@@ -16,6 +16,11 @@ public class TileButton extends JButton {
     private final int row;
     private final int col;
 
+    /**
+     *
+     * @param row
+     * @param col
+     */
     public TileButton(int row, int col) {
         this.row = row;
         this.col = col;        
@@ -23,6 +28,16 @@ public class TileButton extends JButton {
         this.setBorder(new BevelBorder(0));
         this.setCursor(new Cursor(12));
     }
+
+    /**
+     *
+     * @return
+     */
     public int getRow() {return row;}
+
+    /**
+     *
+     * @return
+     */
     public int getCol() {return col;}
 }

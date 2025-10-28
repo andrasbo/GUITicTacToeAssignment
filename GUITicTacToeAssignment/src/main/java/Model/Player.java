@@ -7,9 +7,20 @@ package Model;
  */
 public enum Player {
     X, O;
+
+    /**
+     *
+     * @return
+     */
     public static Player[] getPlayers() {
         return Player.values();
     }
+
+    /**
+     *
+     * @param p
+     * @return
+     */
     public static Player nextPlayer(Player p) {
         if (p != null) {
             switch (p) {

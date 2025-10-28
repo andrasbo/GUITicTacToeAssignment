@@ -13,6 +13,11 @@ public class Game {
     private Player currentPlayer;
     private boolean gameEnded;
     
+    /**
+     *
+     * @param rows
+     * @param cols
+     */
     public Game(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
@@ -25,6 +30,10 @@ public class Game {
         currentPlayer = Player.X;
         gameEnded = false;
     }
+
+    /**
+     *
+     */
     public void resetGame() {
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
@@ -35,12 +44,35 @@ public class Game {
         gameEnded = false;
     } 
     
+    /**
+     *
+     * @return
+     */
     public Tile[][] getBoard() {return board;}
+
+    /**
+     *
+     * @return
+     */
     public Player getCurrentPlayer() {return currentPlayer;}
+
+    /**
+     *
+     */
     public void nextPlayer() {
         currentPlayer = Player.nextPlayer(currentPlayer);
     }
     
+    /**
+     *
+     * @param row
+     * @param col
+     * @throws BoardIsFullException
+     * @throws PlayerWonException
+     * @throws InvalidTileException
+     * @throws GameEndedException
+     * @throws InvalidTileException
+     */
     public void playerTakesTile(int row, int col)
             throws BoardIsFullException, PlayerWonException,
             InvalidTileException, GameEndedException, InvalidTileException {
@@ -58,6 +90,12 @@ public class Game {
         if (isFullBoard()) {throw new BoardIsFullException();}
     }
     
+    /**
+     *
+     * @param row
+     * @param col
+     * @return
+     */
     public boolean isValidTile(int row, int col) {
         int i = rows-1;
         while (i > row) {

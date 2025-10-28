@@ -1,0 +1,51 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+21
+-sourcepath
+'G:/Saját meghajtó/ELTE IK/2025-26-1/PROGTECH GY/beadando II/GUITicTacToeAssignment/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'G:/Saját meghajtó/ELTE IK/2025-26-1/PROGTECH GY/beadando II/GUITicTacToeAssignment/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'GUITicTacToeAssignment 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'GUITicTacToeAssignment 1.0-SNAPSHOT API'
+Model
+View
+Controller
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\src\main\java = 1761137099634
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\element-list = 1761574702246
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\serialized-form.html = 1761574702791
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\overview-tree.html = 1761574703752
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\index.html = 1761574703808
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\allclasses-index.html = 1761574703888
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\allpackages-index.html = 1761574703946
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\module-search-index.js = 1761574704000
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\package-search-index.js = 1761574704054
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\type-search-index.js = 1761574704109
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\member-search-index.js = 1761574704169
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\tag-search-index.js = 1761574704221
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\index-all.html = 1761574704311
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\search.html = 1761574704365
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\overview-summary.html = 1761574704424
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\help-doc.html = 1761574704491
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\stylesheet.css = 1761574704562
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\script.js = 1761574704621
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\copy.svg = 1761574704676
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\link.svg = 1761574704736
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\search.js = 1761574704800
+G:\Saját meghajtó\ELTE IK\2025-26-1\PROGTECH GY\beadando II\GUITicTacToeAssignment\target\reports\apidocs\search-page.js = 1761574704854

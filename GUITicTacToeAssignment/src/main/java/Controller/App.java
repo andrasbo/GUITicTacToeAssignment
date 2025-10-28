@@ -33,6 +33,8 @@ public class App {
         window.addBoardActionListener(new HandleBoard());
         
         newGameDialog.addStartGameActionListener(new HandleStartGame());
+        
+        newGameDialog.setVisible(true);
 
     }
     
@@ -86,9 +88,11 @@ public class App {
             }
             catch (BoardIsFullException exception) {
                 window.statusDraw();
+                newGameDialog.setVisible(true);
             }
             catch (PlayerWonException exception) {
-                window.statusWin(player.toString());                
+                window.statusWin(player.toString());
+                newGameDialog.setVisible(true);                
             }
             catch (GameEndedException exception) {}
             finally {
