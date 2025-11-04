@@ -49,6 +49,7 @@ public class App {
         public void actionPerformed(ActionEvent e) {
             game.resetGame();
             window.resetBoard();
+            window.drawBoard(game);
         } 
     }
     static class HandleExitWindow implements ActionListener {
